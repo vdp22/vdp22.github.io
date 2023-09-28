@@ -47,3 +47,13 @@ a
 
 
 }
+
+ul {
+
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+
+}
