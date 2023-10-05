@@ -60,7 +60,7 @@ ul {
     display: flex;
     list-style: none;
     flex-direction: row;
-
+    justify-content: space-evenly;
     flex-wrap: wrap;
 
 }
@@ -98,4 +98,14 @@ div.wrapper
     padding: 30px;
 
 }
+
+.footer-flex{
+    display: flex;
+    justify-content: right;
+    align-items: baseline;
+
+
+}
+
+
 
