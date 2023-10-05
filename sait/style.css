@@ -3,6 +3,12 @@
 body
 {
     background-color: rgb(168, 15, 92);
+
+    display: flex;
+    margin: 0;
+    height: 100%;
+    justify-content: space-between;
+    
 }
 footer
 {
@@ -53,7 +59,42 @@ ul {
     display: flex;
     list-style: none;
     flex-direction: row;
-    
+
     flex-wrap: wrap;
 
 }
+
+html {
+    height: 100%;
+}
+
+
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+div.centered
+{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+}
+div.centered table
+{
+    margin: 0 auto;
+    text-align: left;
+}
+
+div.wrapper 
+{
+
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+
+}
+
