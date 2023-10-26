@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function Width(this)
+        {
+            this.style.width="200px";
+        }
+
+    </script>
 </head>
 
 <body>
@@ -30,7 +37,7 @@
     <main>
         <h1>Фото</h1>
         <div class="gallery">
-            <img src="12.jpg" alt="Описание изображения 1" width="200" height="200" class="circle">
+            <img src="12.jpg" alt="Описание изображения 1" width="200" height="200" class="circle" onclick="Width">
             <figcaption>Картинка 1</figcaption>
             <img src="13.jpeg" alt="Описание изображения 2" width="200" height="200" class="circle">
             <figcaption>Картинка 2</figcaption>
@@ -62,7 +69,7 @@
         </div>>
     </footer>
 
-    
+   
     
 </body>
 </html>

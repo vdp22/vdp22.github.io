@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        
+        function setColor(this)
+        {
+            this.style.backgroundColor="red";
+        }
+        
+        //alert("head");
+        //console.log("head");
+        //document.write("head");
+        
+
+        
+        
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -16,10 +31,18 @@
 
 
 
-<body>
+<body id="body">
+    <script>
+        //alert("начало");
+        //console.log("начало");
+       //document.write("начало");
+
+        
+    </script>
+    
     <header>
     <div class = "wrapper">
-        <h1>
+        <h1 id="title_h2" onclick="setColor">
             Web-tehnology
         </h1>
         <div>
@@ -103,10 +126,19 @@
         <div class="form_title2">Ваш вопрос:</div>
     
         <div>
-            <textarea cols="20"></textarea>
+            <textarea style="width:200px; height: 60px;" id="area" placeholder="Напишите сообщение здесь"></textarea>
+            <br>
+            <button onclick="localStorage.removeItem('area');area.value=''">Очистить</button>
+            <script>
+                area.value = localStorage.getItem('area');
+                area.oninput = () => {
+                  localStorage.setItem('area', area.value)
+                };
+            </script>
         </div>
 
     </form>
+    
 </main>
     <footer>
         <div class = "wrapper footer-flex">
@@ -123,6 +155,12 @@
         </div>
     
     </footer>
-    
+    <script>
+        
+        //alert("конец");
+        //document.write("конец");
+        //document.getElementById("title_h2").innerText="Привет";
+        
+    </script>
 </body>
 </html>
