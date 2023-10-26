@@ -4,88 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1
+        {
+            color: aquamarine;
+            font-size: larger;
+        }
+    </style>
 </head>
+
+
+
 <body>
-
-
-    <div>
-        <div>И еще один вопрос?</div>
-        <label for="chb1">
-        <input type="checkbox" name="chb1" id="chb1">Может так</label>
-        <br>
-        <label for="chb2">
-        <input type="checkbox" name="chb2" id="chb2">Или не так</label>
-        <br>
-        <label for="chb2">
-        <input type="checkbox" name="chb3" id="chb3">Иначе</label>
-        <br>
+    <header>
+    <div class = "wrapper">
+        <h1>
+            Web-tehnology
+        </h1>
+        <div>
+            <img src="images/Twisted_Minds_2023_allmode.png" alt="Лого" width="100" height="100">
+        </div>
+        <nav>
+            <div class="href">
+            <ul>
+                <li><a href="Index.html">Главная</a></li>
+                <li><a href="Rezume.html">Резюме</a></li>
+                <li><a href="Competenciya.html">Компетенция</a></li>
+                <li><a href="Photo.html">Фото</a></li>
+                <li><a href="form.html">Форма</a></li>
+            </ul>
+            </div>
+        </nav>
     </div>
+    </header>
     
-
-
-    <form action="" method="get">
-        <input type="submit" value="Отправить запрос">
-        <input type="submit" value="Очистить">
-    </form>
-
-
-
-
-
-    <div>
-        <div>Как вад удобно получить ответ:</div>
-        <label for="c_mail">
-        <input type="radio" name="com_tion" id="c_mail">По почте</label>
-        <br>
-        <label for="c-tel">
-        <input type="radio" name="com_tiom" id="c_tel">По телефону</label>
-        <br>
-        <label for="c_none">
-        <input type="radio" name="com_tion" id="c_none">Не нужно отвечать</label>
-        <br>
-    </div>
-    
-
-
-    <form action="" method="get">
-        <input type="submit" value="Отправить запрос">
-        <input type="submit" value="Очистить">
-    </form>
-
-    <div>
+<main class="main">
+    <form class="form">
+        <div class="block1">
+            <div class="form_title">И еще один вопрос?</div>
+            <label for="chb1">
+            <input type="checkbox" name="chb1" id="chb1">Может так</label>
+            <br>
+            <label for="chb2">
+            <input type="checkbox" name="chb2" id="chb2">Или не так</label>
+            <br>
+            <label for="chb2">
+            <input type="checkbox" name="chb3" id="chb3">Иначе</label>
+            <br>
+            <input type="submit" value="Отправить запрос">
+            <input type="submit" value="Очистить">
+        </div>
         
-        <label for="theme">Укажите тему вопроса</label>
-        <br>
-        <select name="theme" id="theme">
-        <option value="work">Работа</option>
-        <option value="cooperation">сотрудничество</option>
-        <option value="personal">личное</option>
-        </select>
+    
+        <div class="block2">
+            <div>Как вад удобно получить ответ:</div>
+            <label for="c_mail">
+            <input type="radio" name="com_tion" id="c_mail">По почте</label>
+            <br>
+            <label for="c-tel">
+            <input type="radio" name="com_tiom" id="c_tel">По телефону</label>
+            <br>
+            <label for="c_none">
+            <input type="radio" name="com_tion" id="c_none">Не нужно отвечать</label>
+            <br>
+            
+            <input type="submit" value="Отправить запрос">
+            <input type="submit" value="Очистить">
+        </div>
+        
 
-    </div>
+    
+        <div class="block3">
+            <label for="theme">Укажите тему вопроса</label>
+            <br>
+            <select name="theme" id="theme">
+            <option value="work">Работа</option>
+            <option value="cooperation">сотрудничество</option>
+            <option value="personal">личное</option>
+            </select>
+        </div>
+    
+        <div>
+            <label for="example" class="label">Ваше имя</label>
+            <input type="text" name="example" id="example"  pattern="[A-Z]+"required class="input_button">
+        </div>
 
-    <div>
+        <div>
+            <label for="email" class="label">адрес почты</label>
+            <input type="email" name="email" id="email" class="input_button">
+        </div>
+    
+        <div>
+            <label for="tel" class="label">Номер телефона</label>
+            <input type="tel" name="tel" id="tel" class="input_button">
+        </div>
+    
+        <div class="form_title2">Ваш вопрос:</div>
+    
+        <div>
+            <textarea cols="20"></textarea>
+        </div>
 
-        <label for="example">Пример текствого поля</label>
-        <br>
-        <input type="text" name="example" id="example" size="30" pattern="[A-Z]+"required>
-    </div>
-    <div>
-        <label for="email">адрес почты</label>
-        <input type="email" name="email" id="email">
-    </div>
+    </form>
+</main>
+    <footer>
+        <div class = "wrapper footer-flex">
+            <a href ="https://github.com/vdp22"><img src="images/channels4_profile.jpg" alt="Я в Github" width="50" height="50"></a>
+            <a href ="https://t.me/Logistration"><img src="images/unnamed.png" alt="Я в Телеге" width="50" height="50"></a>
+            <a href ="https://vk.com/logistration"><img src="images/JDzGxVxtoz4HyClEl6aoi0lZca_XRJucuuBGpWXpGIF1EgsnkGFCMuo9qk9qyy8nauVMuJl5qCigJeeathm-HnF1.jpg" alt="Я в ВК" width="50" height="50"></a>
+            
+        </div>
 
-    <div>
-        <label for="tel">адрес почты</label>
-        <input type="tel" name="tel" id="tel">
-    </div>
-
-    <div>Ваш вопрос:</div>
-
-    <div>
-
-        <textarea cols="20"></textarea>
-    </div>
-
+        <div class="h3-footer">
+        <h3>
+            Виноградов_Даниил 2071
+        </h3>
+        </div>
+    
+    </footer>
+    
 </body>
 </html>
